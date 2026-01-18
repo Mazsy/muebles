@@ -355,6 +355,40 @@ header p {
     transform: scale(1.02);
 }
 
+/* Botón flotante de WhatsApp */
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25d366 0%, #20ba63 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.whatsapp-flotante svg {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-flotante:active {
+    transform: scale(0.95);
+}
+
 @keyframes slideIn {
     from {
         transform: translateX(400px);
@@ -393,6 +427,18 @@ header p {
         font-size: 1.2rem;
         bottom: 20px;
         right: 20px;
+    }
+
+    .whatsapp-flotante {
+        bottom: 80px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .whatsapp-flotante svg {
+        width: 28px;
+        height: 28px;
     }
 
     .filtros {
